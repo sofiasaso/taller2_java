@@ -1,5 +1,7 @@
 package polimorfismo;
 
+import java.util.Scanner;
+
 public class Triangulo extends Figura{
     
     private float base;
