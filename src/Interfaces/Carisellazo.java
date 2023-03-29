@@ -14,14 +14,14 @@ Scanner sa=new Scanner(System.in);
 
 
 public void iniciar(){
-System.out.println(" ingrese su nombre ");
+System.out.println(" Ingrese su nombre ");
 nombre=sa.nextLine();
 }
 
 @Override
 public void jugar (){
 moneda=(int)Math.floor(Math.random ()*2+1);
-System.out.println("escoja 1.cara o 2.sello " );
+System.out.println("1)Cara o 2)Sello " );
 eleccion=sa.nextInt();
 }
 
@@ -29,8 +29,9 @@ eleccion=sa.nextInt();
 public void finalizar (){
 
 if (eleccion==1 && moneda==1){
-System.out.println(this.nombre+"salio cara escogiste cara tu ganas");
-}else{System.out.println("perdiste :c");}
+System.out.println(this.nombre+" El programa ha escogido cara, haz escogido");
+ System.out.println("GANASTE!!!!!");
+}else{System.out.println("Lo siento, haz perdido");}
 
 }
 }
