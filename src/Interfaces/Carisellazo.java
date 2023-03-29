@@ -2,7 +2,7 @@ package Interfaces;
 
 import java.util.Scanner;
 
-public class Caricellazo implements Juego{
+public class Carisellazo implements Juego{
 
 Scanner sa=new Scanner(System.in);
 
