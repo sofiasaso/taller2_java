@@ -1,6 +1,6 @@
 import java.util.Scanner;
 import java.util.Random;
-public class Piedrapapel implements Juego {
+public class PiedraPapelTijera implements Juego {
 
     
 
@@ -38,7 +38,7 @@ public class Piedrapapel implements Juego {
 
     @Override
     public void iniciar() {
-        System.out.println("Bienvenido ");
+        System.out.println("Bienvenido a Piedra, Papel o Tijera");
     }
 
     @Override
@@ -47,11 +47,11 @@ public class Piedrapapel implements Juego {
             
       
         Scanner sa = new Scanner(System.in);
-        System.out.println("elija para jugar   1=PIEDRA 2=PAPEL 3=TIJERA ");
+        System.out.println("Presiona 1)Piedra, 2)Papel, 3)Tijera");
         this.eleccionJugador = sa.nextInt();
         Random random = new Random();
         this.eleccionComputadora = random.nextInt(3) + 1; //  número aleatorio entre 1 y 3
-        System.out.println("El sitema ha elegido: " + this.eleccionComputadora);
+        System.out.println("El programa escogió: " + this.eleccionComputadora);
 
         if (this.eleccionJugador == this.eleccionComputadora) {
             this.resultado = 0; 
@@ -69,8 +69,8 @@ public class Piedrapapel implements Juego {
         if (this.resultado == 0) {
             System.out.println("Empate");
         } else if (this.resultado == 1) {
-            System.out.println("FELICIDADES HAS GANADO");
+            System.out.println("Ganaste!!!!");
         } else {
-            System.out.println("LO SIENTO HAS PERDIDO");
+            System.out.println("Perdiste");
         }
     }}
