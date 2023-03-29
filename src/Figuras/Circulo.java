@@ -1,5 +1,7 @@
 package Figuras;
 
+import java.util.Scanner;
+
 public class Circulo {
 
     private double radio;
