@@ -1,4 +1,4 @@
-package salud;
+package Salud;
 
 import java.util.Scanner;
 
